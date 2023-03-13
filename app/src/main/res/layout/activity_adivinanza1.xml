@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/juego"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:layout_editor_absoluteX="16dp"
+    tools:context=".adiv.adivinanza1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cont"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="28dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_renderMode="automatic"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="-30dp">
+
+                <Button
+                    android:id="@+id/OpcionesJuegos48"
+                    android:layout_width="70sp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/opciones"
+                    android:text="Opciones"
+                    android:textColor="@color/transparent"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="363dp"
+                android:layout_height="71dp"
+                android:orientation="horizontal"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout4"
+                tools:layout_editor_absoluteY="0dp">
+
+                <TextView
+                    android:layout_width="70sp"
+                    android:layout_height="70sp"
+                    android:layout_marginTop="-32dp"
+                    android:background="@drawable/habla"
+                    android:text="Alumno"
+                    android:textColor="@color/transparent" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:fontFamily="@font/gentium_book_basic_bold"
+                    android:gravity="center"
+                    android:text="@string/usuario1"
+                    android:textAlignment="center"
+                    android:textColor="@color/negro"
+                    android:textSize="35sp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/reiniciar"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:background="@drawable/regresar"
+                android:fontFamily="@font/gentium_book_basic_bold"
+                android:hint="Reiniciar"
+                android:padding="10sp"
+                android:textColorHint="@color/transparent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Space
+                android:layout_width="0sp"
+                android:layout_height="40dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center">
+                <ImageView
+                    android:id="@+id/imagen"
+                    android:layout_width="200dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center" />
+                <Space
+                    android:layout_width="10sp"
+                    android:layout_height="0dp"/>
+                <ImageView
+                    android:id="@+id/imagen2"
+                    android:layout_width="200dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center" />
+
+            </LinearLayout>
+            <Space
+                android:layout_width="0sp"
+                android:layout_height="10dp"/>
+            <TextView
+                android:id="@+id/adivinanza"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gentium_book_basic_bold"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="30sp"
+                android:gravity="center_horizontal" />
+            <Space
+                android:layout_width="0sp"
+                android:layout_height="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/cinco"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/radio_desselect"
+                        android:textColor="@color/negro"
+                        android:textSize="60dp"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/gentium_book_basic_bold"
+                        android:layout_gravity="center"/>
+
+                    <Space
+                        android:layout_width="6sp"
+                        android:layout_height="0sp" />
+                    <TextView
+                        android:id="@+id/seis"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/radio_desselect"
+                        android:textColor="@color/negro"
+                        android:textSize="60dp"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/gentium_book_basic_bold"
+                        android:layout_gravity="center"/>
+                    <Space
+                        android:layout_width="6sp"
+                        android:layout_height="0sp" />
+                    <TextView
+                        android:id="@+id/siete"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/radio_desselect"
+                        android:textColor="@color/negro"
+                        android:textSize="60dp"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/gentium_book_basic_bold"
+                        android:layout_gravity="center"/>
+                    <Space
+                        android:layout_width="6sp"
+                        android:layout_height="0sp" />
+                    <TextView
+                        android:id="@+id/ocho"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/radio_desselect"
+                        android:textColor="@color/negro"
+                        android:textSize="60dp"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/gentium_book_basic_bold"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/cadena2"
+                android:layout_width="200dp"
+                android:layout_height="55dp"
+                android:ems="10"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:inputType="textNoSuggestions"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/pts1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/gentium_book_basic_bold"
+                android:text="Puntaje: 0"
+                android:textColor="#000"
+                android:textSize="30dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

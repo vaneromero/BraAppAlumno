@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/juego1"
+    tools:context=".AdivDificil">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/datosdf"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_renderMode="automatic"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="-30dp">
+
+            <Button
+                android:id="@+id/OpcionesMenu55"
+                android:layout_width="70sp"
+                android:layout_height="match_parent"
+                android:background="@drawable/opcion"
+                android:text="Opciones"
+                android:textColor="@color/transparent" />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:fontFamily="@font/gentium_book_basic_bold"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:contentDescription=""
+        android:text="Seleccione alguno de los 3 juegos."/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/minS1"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:fontFamily="@font/gentium_book_basic_bold"
+        android:textAllCaps="false"
+        android:background="@drawable/barra1"
+        android:contentDescription="Minusculas y Simbolos"
+        android:text="Minusculas y Simbolos"
+        android:textSize="30dp"/>
+    <Space
+        android:layout_width="10sp"
+        android:layout_height="30dp"/>
+    <Button
+        android:id="@+id/may"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:contentDescription="Mayusculas"
+        android:text="Mayusculas"
+        android:fontFamily="@font/gentium_book_basic_bold"
+        android:textAllCaps="false"
+        android:background="@drawable/barra1"
+        android:textSize="30dp"/>
+    <Space
+        android:layout_width="10sp"
+        android:layout_height="30dp"/>
+    <Button
+        android:id="@+id/num"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:contentDescription="Numeros"
+        android:fontFamily="@font/gentium_book_basic_bold"
+        android:textAllCaps="false"
+        android:background="@drawable/barra1"
+        android:text="Numeros"
+        android:textSize="30dp"/>
+</LinearLayout>
+</LinearLayout>

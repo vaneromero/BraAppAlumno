@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/historia1"
+    tools:context=".Historia">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cont"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="28dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_renderMode="automatic"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:id="@+id/linearLayout4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="-30dp">
+
+                <Button
+                    android:id="@+id/OpcionesHistoria1"
+                    android:layout_width="70sp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/opcion"
+                    android:text="Opciones"
+                    android:textColor="@color/transparent"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="363dp"
+                android:layout_height="71dp"
+                android:orientation="horizontal"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/linearLayout4"
+                tools:layout_editor_absoluteY="0dp">
+
+                <TextView
+                    android:layout_width="70sp"
+                    android:layout_height="70sp"
+                    android:layout_marginTop="-32dp"
+                    android:background="@drawable/habla"
+                    android:text="Alumno"
+                    android:textColor="@color/transparent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:fontFamily="@font/gentium_book_basic_bold"
+                    android:gravity="center"
+                    android:text="Alumno"
+                    android:textAlignment="center"
+                    android:textColor="@color/negro"
+                    android:textSize="35sp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/barra1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cont"
+            app:layout_constraintVertical_bias="0.623">
+
+            <ScrollView
+                android:id="@+id/horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="482dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.466"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gentium_book_basic_bold"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="El lenguaje braille, es hoy en día el sistema de lenguaje para las personas invidentes ya que este sistema fue diseñado para ser explorado de forma táctil debido a que se requiere hacer uso del tacto para poder identificar las letras, numero, símbolos entre otras cosas. El sistema braille fue desarrollado por el francés Louis braille en 1825, después de haber perdido la vista en 1812 por una infección en los ojos ocasionada por un accidente mientras jugaba en el taller de arneses de su padre. Lo cual provoco que entrara a estudiar en la Real Instituto para la juventud Ciega (RIJC) de Francia, donde fue que conoció los primeros libros impresos en relieve creados por el fundador de la escuela Valentín Haüy. Estos libros requerían del uso del tacto para recorrer cada letra de inicio a fin para así saber cómo formar palabras y frases. Posteriormente, Louis Braille retomo la idea de Valentín para mejorar el sistema de lectura y escritura y en 1829 dio a conocer su primera versión del sistema de lectura el cual consistía en recorrer las letras de una palabra con la yema del dedo y así solo sería necesario tocar la letra de una vez para poder identificarla, este nuevo sistema usaba una lezna para crear los puntos con relieve en la hoja de papel y para asegurar que las líneas quedaran en línea recta usaba una rejilla plana. De esta manera el sistema de Louis Braille fue más eficiente para identificar las letras y poder leer oraciones, así como también creo un sistema para escribir notas musicales ya que le gustaba mucho la música. Posteriormente Louis Braille falleció a los 43 años por tuberculosis."
+                    android:textColor="@color/negro"
+                    android:paddingBottom="20sp"
+                    android:textSize="25sp" />
+
+            </ScrollView>
+
+            <Button
+                android:id="@+id/playpause"
+                android:layout_width="248dp"
+                android:layout_height="248dp"
+                android:background="@drawable/tocar"
+                android:text="Reproducir"
+                android:contentDescription="Play y Pause"
+                android:textColor="@color/transparent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/horizontal"
+                tools:ignore="MissingConstraints" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/Creditossf"
+                android:layout_width="300dp"
+                android:layout_height="300sp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/playpause"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/movimiento"
+                app:lottie_renderMode="automatic"
+                tools:ignore="MissingClass,MissingConstraints,RtlHardcoded" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/Creditossdf"
+                android:layout_width="300dp"
+                android:layout_height="300sp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/playpause"
+                app:layout_constraintEnd_toEndOf="@+id/playpause"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/movimiento2"
+                app:lottie_renderMode="automatic"
+                tools:ignore="MissingClass,MissingConstraints,RtlHardcoded" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+         </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

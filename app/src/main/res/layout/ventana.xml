@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:background="#E8AC6B">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints,RtlSymmetry">
+
+        <ImageView
+            android:id="@+id/imagen"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:src="@drawable/win" />
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Titulo"
+            android:fontFamily="@font/gentium_book_basic"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/punt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:text="Puntuacion: 0"
+            android:fontFamily="@font/gentium_book_basic"
+            android:textColor="#000"
+            android:textSize="30dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:orientation="horizontal">
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/no_opt9"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borde_redondo"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="Salir"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:fontFamily="@font/gentium_book_basic"
+                android:textColor="#D1D0D0"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="20sp"
+                android:layout_height="12sp" />
+
+            <TextView
+                android:id="@+id/yes_opt9"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/borde_redondo"
+                android:gravity="center_horizontal"
+                android:padding="5dp"
+                android:text="Volver a jugar"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#D1D0D0"
+                android:fontFamily="@font/gentium_book_basic"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

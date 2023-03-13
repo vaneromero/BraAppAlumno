@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="380dp"
+    android:layout_height="wrap_content"
+    android:background="#E8AC6B">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:ignore="MissingConstraints,RtlSymmetry">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Instrucciones"
+            android:fontFamily="@font/gentium_book_basic_bold"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="30dp" />
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/pts5" />
+
+            <Space
+                android:layout_width="10sp"
+                android:layout_height="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:fontFamily="@font/gentium_book_basic"
+                android:text="Recibiras 5 puntos por cada par de letras que encuentres."
+                android:textColor="#000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:fontFamily="@font/gentium_book_basic"
+
+                android:text="Perderas 2 puntos cada vez que falles al buscar los pares de las letras."
+                android:textColor="#000" />
+
+            <Space
+                android:layout_width="10sp"
+                android:layout_height="12sp" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/pts2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#0A2465"
+                android:textStyle="bold"
+                android:fontFamily="@font/gentium_book_basic"
+
+                android:text="Pulsa fuera dal area para continuar >>>"
+                android:textSize="24dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

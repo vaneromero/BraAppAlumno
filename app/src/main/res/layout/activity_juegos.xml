@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/juego1"
+    tools:context=".Juegos">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/datosdf"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_renderMode="automatic"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="-30dp">
+
+            <Button
+                android:id="@+id/OpcionesMenu1"
+                android:layout_width="70sp"
+                android:layout_height="match_parent"
+                android:background="@drawable/opcion"
+                android:text="Opciones"
+                android:textColor="@color/transparent"/>
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gentium_book_basic_bold"
+            android:padding="10dp"
+            android:text="Elija alguno de los 2 juegos que desee jugar. Pulse a la izquierda para memorama o derecha para adivinanzas."
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/memo"
+                android:layout_width="220dp"
+                android:layout_height="270dp"
+                android:layout_gravity="left"
+                android:background="@drawable/memodama"
+                android:contentDescription="Memorama"
+                android:text="Memorama"
+                android:textColor="@color/transparent"
+                tools:ignore="RtlHardcoded" />
+
+            <Space
+                android:layout_width="50dp"
+                android:layout_height="0sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/adiv"
+                android:layout_width="220dp"
+                android:layout_height="270dp"
+                android:layout_gravity="right"
+                android:background="@drawable/adivina"
+                android:contentDescription="Adivinanzas"
+                android:text="Adivinanzas"
+                android:textColor="@color/transparent"
+                tools:ignore="RtlHardcoded" />
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

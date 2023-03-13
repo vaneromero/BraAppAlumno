@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/constraintlayout"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:paddingEnd="5dp"
+        android:paddingRight="5dp"
+        app:cardCornerRadius="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/toast1"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:background="@drawable/toast1"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/texto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@color/negro"
+                    android:text="text"
+                    android:fontFamily="@font/gentium_book_basic"
+                    android:textSize="30sp"/>
+
+                <TextView
+                    android:id="@+id/toastT2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="toast"
+                    android:textColor="@color/negro"
+                    android:textSize="40dp"
+                    android:fontFamily="@font/gentium_book_basic"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/texto" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

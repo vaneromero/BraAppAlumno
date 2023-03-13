@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BraApp Alumno</string>
+    <string name="todo">TODO</string>
+    <string name="usuario1">Alumno</string>
+    <string name="descr">Aprende Braille de forma rápida y divertida en solo unos minutos.</string>
+
+</resources>
